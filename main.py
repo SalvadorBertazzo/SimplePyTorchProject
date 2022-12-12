@@ -104,10 +104,10 @@ def main():
               f"  *Bias: {round(model.state_dict()['bias'].item(), 4)}")
         plot_predictions(X_train, y_train, X_test, y_test)
 
-        print(f"\tThis was the model predictions before training it -> *Weight: {weight_old}  *Bias: {bias_old}")
+        print(f"\tThis were the model predictions before training it -> *Weight: {weight_old}  *Bias: {bias_old}")
         plot_predictions(X_train, y_train, X_test, y_test, predictions=y_pred_old)
 
-        print(f"\tThe original values are -> *Weight: {weight}  *Bias: {bias}")
+        print(f"\tThe original values were -> *Weight: {weight}  *Bias: {bias}")
         plot_predictions(X_train, y_train, X_test, y_test, predictions=y_pred_new)
         print("-" * 100)
 
